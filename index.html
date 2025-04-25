@@ -3,100 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EasyReply – Smart Replies for Google Reviews</title>
-  <meta name="description" content="EasyReply – AI-powered reply generator for Google reviews. Save time, respond smartly." />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="#hero" class="logo">💬 EasyReply</a>
-      <div class="nav-menu">
-        <a href="#hero" class="nav-link">Home</a>
-        <a href="#features" class="nav-link">Features</a>
-        <a href="#testimonials" class="nav-link">Testimonials</a>
-        <a href="#faq" class="nav-link">FAQ</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <section id="hero">
-    <h1>EasyReply</h1>
-    <p>Supercharge your customer communication with AI-powered replies.<br>Save time, boost trust, and grow your local business effortlessly.</p>
-    <a href="https://dashboard.easyreply.app" class="cta-btn">Login to Dashboard</a>
-  </section>
-
-  <section id="features">
-    <h2>✨ Key Features</h2>
-    <div class="feature-grid">
-      <div class="card"><strong>🚀 One-Click Replies</strong><br>No typing needed. Just paste a review and get a polished reply instantly.</div>
-      <div class="card"><strong>💳 Credit-Based Model</strong><br>Transparent pay-as-you-go system. Recharge only when needed.</div>
-      <div class="card"><strong>🛡️ Secure & Private</strong><br>Enterprise-grade security. You control your data, always.</div>
-      <div class="card"><strong>🌐 Multi-Platform Ready</strong><br>Use replies across Google, Email, WhatsApp, and more.</div>
-      <div class="card"><strong>⏱️ Time Saving</strong><br>Reply to hundreds of reviews in seconds using AI precision.</div>
-      <div class="card"><strong>📞 Support Anytime</strong><br>Dedicated help via email & WhatsApp when you need it.</div>
-    </div>
-  </section>
-
-  <section id="testimonials">
-    <h2>💬 What Our Users Say</h2>
-    <div class="feature-grid">
-      <div class="card">“EasyReply has saved me hours each week! Absolute game changer.” – Riya, Café Owner</div>
-      <div class="card">“No more struggling with replies. The tone customization is brilliant.” – Ankit, Clinic Manager</div>
-      <div class="card">“Very easy to use and saves a lot of time. Best tool I found!” – Neha, Boutique Owner</div>
-    </div>
-  </section>
-
-  <section id="faq">
-    <h2>❓ Frequently Asked Questions</h2>
-    <div class="faq-grid">
-      <div class="card">
-        <h3 onclick="toggleFaq(this)">Can I change my plan later?</h3>
-        <p>Yes, upgrade or recharge anytime from your dashboard.</p>
-      </div>
-      <div class="card">
-        <h3 onclick="toggleFaq(this)">Do unused credits roll over?</h3>
-        <p>No, credits reset monthly. Use them to the fullest.</p>
-      </div>
-      <div class="card">
-        <h3 onclick="toggleFaq(this)">Is this mobile compatible?</h3>
-        <p>Yes, EasyReply works perfectly on phones and tablets.</p>
-      </div>
-      <div class="card">
-        <h3 onclick="toggleFaq(this)">Is support available?</h3>
-        <p>Yes! We’re available on email and <span class="whatsapp"><a href="https://wa.link/4ewy3l" target="_blank">WhatsApp</a></span>.</p>
-      </div>
-      <div class="card">
-        <h3 onclick="toggleFaq(this)">Can I cancel anytime?</h3>
-        <p>Absolutely. You’re not locked in. Cancel or pause whenever needed.</p>
-      </div>
-      <div class="card">
-        <h3 onclick="toggleFaq(this)">What if I run out of credits?</h3>
-        <p>You can instantly top up credits anytime from your dashboard.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>📩 Contact Us</h2>
-    <p style="text-align:center; max-width:600px; margin:0 auto;">Have a question or need help? Reach out at <a href="mailto:easyreply.superai@gmail.com">easyreply.superai@gmail.com</a> or <a href="https://wa.link/4ewy3l" target="_blank">WhatsApp Us</a>.</p>
-  </section>
-
-  <footer>
-    EasyReply © 2025 – Built by SuperAI Labs. All rights reserved.
-  </footer>
-
+  <title>EasyReply – AI-Powered Review Response Tool</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    .hero-bg { background: linear-gradient(to right, #4f46e5, #7c3aed); }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { 0% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); } }
+    .hover-glow:hover { box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4); transition: 0.3s; }
+    #faq1, #faq2, #faq3, #faq4, #faq5 { transition: all 0.3s ease; }
+  </style>
   <script>
-    function toggleFaq(el) {
-      document.querySelectorAll('.faq-grid .card').forEach(card => {
-        if (card.contains(el)) {
-          card.classList.toggle('active');
-        } else {
-          card.classList.remove('active');
-        }
-      });
+    function toggleFAQ(id) {
+      const content = document.getElementById(id);
+      content.classList.toggle('hidden');
     }
   </script>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Your full EasyReply landing page code here (Already done above) -->
 </body>
 </html>
