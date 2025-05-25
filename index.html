@@ -30,6 +30,7 @@
         right: 0;
         width: 100%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 40;
       }
     }
   </style>
@@ -37,7 +38,7 @@
 <body class="bg-white text-gray-800 font-[Poppins]">
 
 <!-- Header -->
-<header class="fixed top-0 left-0 right-0 bg-white shadow z-50 px-6 md:px-20 py-4 flex justify-between items-center">
+<header class="fixed top-0 left-0 right-0 bg-white shadow z-50 px-4 md:px-20 py-4 flex justify-between items-center">
   <div class="flex items-center space-x-3">
     <span class="text-2xl font-bold text-purple-700">EasyReply</span>
   </div>
@@ -51,18 +52,18 @@
     </svg>
   </button>
 </header>
-<div id="mobileMenu" class="mobile-menu hidden px-6 pt-16 pb-4">
+<div id="mobileMenu" class="mobile-menu hidden px-6 pt-20 pb-4">
   <a href="https://dashboard.easyreply.app/" target="_blank" class="block mb-2 bg-purple-700 text-white text-center py-2 rounded-full">Login</a>
   <a href="https://www.linkedin.com/in/govind-moghekar-348a9177/" target="_blank" class="block border border-purple-700 text-purple-700 text-center py-2 rounded-full">Talk to Founder</a>
 </div>
 
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="hero-bg text-white pt-32 pb-20 px-6 md:px-20 text-center">
   <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to EasyReply</h1>
   <p class="text-lg md:text-xl">Revolutionize how you respond to customer reviews with AI-generated, personalized replies — fast, reliable, and human-like.</p>
 </section>
 
-<!-- Why Choose EasyReply -->
+<!-- Why Choose -->
 <section class="pt-32 pb-16 px-6 md:px-20 bg-gray-50 text-center">
   <h2 class="text-3xl font-bold mb-10">Why Choose EasyReply?</h2>
   <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
@@ -70,12 +71,12 @@
     <div class="bg-white p-6 rounded-lg shadow hover-glow fade-in"><h3 class="font-semibold text-xl mb-2">⏱️ Save Time</h3><p>Reply faster than manual typing. Let EasyReply handle it.</p></div>
     <div class="bg-white p-6 rounded-lg shadow hover-glow fade-in"><h3 class="font-semibold text-xl mb-2">🗣️ Sound Human</h3><p>Write replies that feel natural, not robotic.</p></div>
     <div class="bg-white p-6 rounded-lg shadow hover-glow fade-in"><h3 class="font-semibold text-xl mb-2">🎯 Tone Customization</h3><p>Choose from friendly, grateful, or professional tones.</p></div>
-    <div class="bg-white p-6 rounded-lg shadow hover-glow fade-in"><h3 class="font-semibold text-xl mb-2">🌍 Multilingual Support</h3><p>Understands and responds in multiple languages.</p></div>
+    <div class="bg-white p-6 rounded-lg shadow hover-glow fade-in"><h3 class="font-semibold text-xl mb-2">🌐 Multiplatform Support</h3><p>Respond on Google, Facebook, and more.</p></div>
     <div class="bg-white p-6 rounded-lg shadow hover-glow fade-in"><h3 class="font-semibold text-xl mb-2">📈 SEO Optimized</h3><p>Boost visibility with professionally written replies.</p></div>
   </div>
 </section>
 
-<!-- Testimonials Section -->
+<!-- Testimonials -->
 <section class="pt-32 pb-16 px-6 md:px-20 bg-white text-center">
   <h2 class="text-3xl font-bold mb-10">💬 What Our Users Say</h2>
   <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
@@ -94,10 +95,11 @@
   </div>
 </section>
 
-<!-- Pricing Section -->
+<!-- Pricing -->
 <section class="pt-32 pb-16 px-6 md:px-20 bg-gray-100 text-center">
   <h2 class="text-3xl font-bold mb-10">💳 Affordable & Transparent Pricing (1-Year Access)</h2>
   <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+    <!-- Starter -->
     <div class="bg-white p-6 rounded-xl shadow-md fade-in hover-glow flex flex-col items-center">
       <p class="text-red-600 font-semibold mb-1 text-sm line-through">Before ₹2,049</p>
       <h3 class="text-3xl font-bold text-purple-700 mb-2">₹1,499</h3>
@@ -109,6 +111,7 @@
       </ul>
       <a href="https://payments.cashfree.com/forms/easyreplaybasicplan" target="_blank" class="bg-purple-700 text-white font-semibold py-2 px-6 rounded-full shadow hover:bg-purple-800 transition">Buy Plan</a>
     </div>
+    <!-- Pro -->
     <div class="bg-white p-6 rounded-xl shadow-md fade-in hover-glow border-2 border-purple-700 flex flex-col items-center">
       <p class="text-red-600 font-semibold mb-1 text-sm line-through">Before ₹6,000</p>
       <h3 class="text-3xl font-bold text-purple-700 mb-2">₹4,499</h3>
@@ -120,6 +123,7 @@
       </ul>
       <a href="https://payments.cashfree.com/forms/easyreplyappproplan" target="_blank" class="bg-purple-700 text-white font-semibold py-2 px-6 rounded-full shadow hover:bg-purple-800 transition">Buy Plan</a>
     </div>
+    <!-- Growth -->
     <div class="bg-white p-6 rounded-xl shadow-md fade-in hover-glow flex flex-col items-center">
       <p class="text-red-600 font-semibold mb-1 text-sm line-through">Before ₹10,500</p>
       <h3 class="text-3xl font-bold text-purple-700 mb-2">₹8,999</h3>
@@ -134,20 +138,20 @@
   </div>
 </section>
 
-<!-- FAQ Section -->
+<!-- FAQ -->
 <section class="pt-32 pb-16 px-6 md:px-20 bg-white max-w-4xl mx-auto">
-  <h2 class="text-3xl font-bold text-center mb-10">🙋 Frequently Asked Questions</h2>
+  <h2 class="text-3xl font-bold text-center mb-10">❓ Frequently Asked Questions</h2>
   <div class="space-y-6">
     <details class="border-b pb-4"><summary class="cursor-pointer font-semibold text-lg">❓ Why should I reply to customer reviews?</summary><p class="mt-2 text-sm text-gray-600">To show you care, boost SEO, and gain customer trust.</p></details>
     <details class="border-b pb-4"><summary class="cursor-pointer font-semibold text-lg">💬 What is EasyReply?</summary><p class="mt-2 text-sm text-gray-600">AI tool that writes fast, personalized review responses.</p></details>
     <details class="border-b pb-4"><summary class="cursor-pointer font-semibold text-lg">🚀 How does it benefit my business?</summary><p class="mt-2 text-sm text-gray-600">Saves hours, ensures consistent and engaging replies.</p></details>
     <details class="border-b pb-4"><summary class="cursor-pointer font-semibold text-lg">📈 How do I use EasyReply?</summary><p class="mt-2 text-sm text-gray-600">Copy review → Pick tone → Click generate → Done!</p></details>
     <details class="border-b pb-4"><summary class="cursor-pointer font-semibold text-lg">🔁 Can I regenerate or customize replies?</summary><p class="mt-2 text-sm text-gray-600">Yes, generate again or tweak before finalizing.</p></details>
-    <details class="border-b pb-4"><summary class="cursor-pointer font-semibold text-lg">🔒 Is my data safe with EasyReply?</summary><p class="mt-2 text-sm text-gray-600">Yes, we use encrypted processing and don't store your reviews.</p></details>
+    <details class="border-b pb-4"><summary class="cursor-pointer font-semibold text-lg">🔐 Is my data safe with EasyReply?</summary><p class="mt-2 text-sm text-gray-600">Yes, we use encrypted processing and don't store your reviews.</p></details>
   </div>
 </section>
 
-<!-- Footer + WhatsApp + Scroll -->
+<!-- Footer -->
 <footer class="bg-gray-900 text-gray-400 text-center py-10 mt-20">
   <p>© 2025 EasyReply – Built with ❤️ by SuperAI Labs</p>
   <div class="mt-2 text-sm">Contact: <a href="mailto:support@easyreply.app" class="text-white underline">support@easyreply.app</a> | <a href="tel:+918830720742" class="text-white underline">+91-8830720742</a></div>
@@ -156,6 +160,8 @@
     <a href="/TermsandConditions.pdf" class="underline">Terms and Conditions</a>
   </div>
 </footer>
+
+<!-- WhatsApp + Scroll -->
 <a href="https://wa.me/918830720742" target="_blank" class="fixed bottom-6 right-6 z-50">
   <div class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg animate-bounce">
     <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
@@ -163,7 +169,7 @@
     </svg>
   </div>
 </a>
-<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed bottom-6 right-24 z-50 bg-purple-600 text-white p-3 rounded-full shadow-md">↑</button>
+<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed bottom-6 right-24 z-50 bg-purple-600 text-white p-3 rounded-full shadow-md">&uarr;</button>
 
 </body>
 </html>
