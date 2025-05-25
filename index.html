@@ -18,25 +18,15 @@
       box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);
       transition: 0.3s;
     }
-    #faq1, #faq2, #faq3, #faq4, #faq5 {
-      transition: all 0.3s ease;
-    }
   </style>
-  <script>
-    function toggleFAQ(id) {
-      const content = document.getElementById(id);
-      content.classList.toggle('hidden');
-    }
-  </script>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 font-[Poppins]">
 
-<!-- Sticky Header -->
 <header class="fixed top-0 left-0 right-0 bg-white shadow z-50 px-6 md:px-20 py-4 flex justify-between items-center">
-  <div class="flex items-center space-x-2">
-  <img src="/assets/easyreply-logo.png" alt="EasyReply Logo" class="h-8 w-8">
-  <span class="text-xl font-bold text-purple-700">EasyReply</span>
-</div>
+  <div class="flex items-center space-x-3">
+    <img src="assets/easyreply-logo.png" alt="EasyReply Logo" class="h-10 w-10 sm:h-12 sm:w-12 mr-1">
+    <span class="text-2xl font-bold text-purple-700">EasyReply</span>
+  </div>
   <div class="flex space-x-4">
     <a href="https://dashboard.easyreply.app/" target="_blank" class="bg-purple-700 text-white px-4 py-2 rounded-full hover:bg-purple-800 transition">Login</a>
     <a href="https://www.linkedin.com/in/your-linkedin-id/" target="_blank" class="border border-purple-700 text-purple-700 px-4 py-2 rounded-full hover:bg-purple-700 hover:text-white transition">Talk to Founder</a>
@@ -114,8 +104,6 @@
   <div class="max-w-6xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-10">💳 Affordable & Transparent Pricing (1-Year Access)</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-      <!-- Starter Plan -->
       <div class="bg-white p-6 rounded-xl shadow-md fade-in hover-glow flex flex-col items-center">
         <p class="text-red-600 font-semibold mb-1 text-sm line-through">Before ₹2,049</p>
         <h3 class="text-3xl font-bold text-purple-700 mb-2">₹1,499</h3>
@@ -127,8 +115,6 @@
         </ul>
         <a href="https://payments.cashfree.com/forms/easyreplaybasicplan" target="_blank" class="bg-purple-700 text-white font-semibold py-2 px-6 rounded-full shadow hover:bg-purple-800 transition">Buy Plan</a>
       </div>
-
-      <!-- Pro Plan -->
       <div class="bg-white p-6 rounded-xl shadow-md fade-in hover-glow border-2 border-purple-700 flex flex-col items-center">
         <p class="text-red-600 font-semibold mb-1 text-sm line-through">Before ₹6,000</p>
         <h3 class="text-3xl font-bold text-purple-700 mb-2">₹4,499</h3>
@@ -140,8 +126,6 @@
         </ul>
         <a href="https://payments.cashfree.com/forms/easyreplyappproplan" target="_blank" class="bg-purple-700 text-white font-semibold py-2 px-6 rounded-full shadow hover:bg-purple-800 transition">Buy Plan</a>
       </div>
-
-      <!-- Growth Plan -->
       <div class="bg-white p-6 rounded-xl shadow-md fade-in hover-glow flex flex-col items-center">
         <p class="text-red-600 font-semibold mb-1 text-sm line-through">Before ₹10,500</p>
         <h3 class="text-3xl font-bold text-purple-700 mb-2">₹8,999</h3>
@@ -153,7 +137,6 @@
         </ul>
         <a href="https://payments.cashfree.com/forms/easyreplyappgrowthplan" target="_blank" class="bg-purple-700 text-white font-semibold py-2 px-6 rounded-full shadow hover:bg-purple-800 transition">Buy Plan</a>
       </div>
-
     </div>
   </div>
 </section>
@@ -184,23 +167,23 @@
   <div class="max-w-4xl mx-auto">
     <h2 class="text-3xl font-bold text-center mb-10">🙋 Frequently Asked Questions</h2>
     <div class="space-y-6">
-      <div class="border-b pb-4 cursor-pointer" onclick="toggleFAQ('faq1')">
+      <div class="border-b pb-4 cursor-pointer" onclick="document.getElementById('faq1').classList.toggle('hidden')">
         <h3 class="text-xl font-semibold">❓ Why should I reply to customer reviews?</h3>
         <p id="faq1" class="hidden mt-2 text-gray-600">Responding to reviews shows your customers you care, strengthens your brand reputation, boosts SEO rankings, and helps attract new customers searching for trusted businesses like yours.</p>
       </div>
-      <div class="border-b pb-4 cursor-pointer" onclick="toggleFAQ('faq2')">
+      <div class="border-b pb-4 cursor-pointer" onclick="document.getElementById('faq2').classList.toggle('hidden')">
         <h3 class="text-xl font-semibold">💬 What is EasyReply?</h3>
         <p id="faq2" class="hidden mt-2 text-gray-600">EasyReply is an AI-powered platform that helps businesses effortlessly generate personalized, professional review responses in seconds — saving time, maintaining a consistent brand voice, and enhancing customer relationships.</p>
       </div>
-      <div class="border-b pb-4 cursor-pointer" onclick="toggleFAQ('faq3')">
+      <div class="border-b pb-4 cursor-pointer" onclick="document.getElementById('faq3').classList.toggle('hidden')">
         <h3 class="text-xl font-semibold">🚀 How does EasyReply benefit my business?</h3>
         <p id="faq3" class="hidden mt-2 text-gray-600">EasyReply automates your review responses, saving hours every week. It ensures every reply is prompt, professional, and consistent, helping build stronger customer trust and a positive online reputation.</p>
       </div>
-      <div class="border-b pb-4 cursor-pointer" onclick="toggleFAQ('faq4')">
+      <div class="border-b pb-4 cursor-pointer" onclick="document.getElementById('faq4').classList.toggle('hidden')">
         <h3 class="text-xl font-semibold">📈 How can I use EasyReply for all my reviews?</h3>
         <p id="faq4" class="hidden mt-2 text-gray-600">To respond to unlimited reviews using EasyReply, simply subscribe to one of our plans. You’ll get access to unlimited AI-generated responses, tone customization, and smart tools to optimize your review management strategy.</p>
       </div>
-      <div class="border-b pb-4 cursor-pointer" onclick="toggleFAQ('faq5')">
+      <div class="border-b pb-4 cursor-pointer" onclick="document.getElementById('faq5').classList.toggle('hidden')">
         <h3 class="text-xl font-semibold">🔁 Can I customize or regenerate a response if I don't like it?</h3>
         <p id="faq5" class="hidden mt-2 text-gray-600">Absolutely! If the first response isn't perfect, you can easily regenerate until you find one that fits your tone and style. EasyReply gives you complete flexibility to ensure every reply sounds just right.</p>
       </div>
@@ -230,18 +213,3 @@
     </svg>
   </div>
 </a>
-
-<!-- Scroll to Top Button -->
-<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top" class="hidden fixed bottom-20 right-6 z-40 bg-purple-700 text-white p-3 rounded-full shadow-lg hover:bg-purple-800 transition">↑</button>
-
-<script>
-  window.onscroll = function () {
-    document.getElementById("scrollTopBtn").style.display =
-      document.documentElement.scrollTop > 200 ? "block" : "none";
-  };
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-</script>
-</body>
-</html>
